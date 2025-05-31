@@ -1,122 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mr. Shasank Lamsal | WebGhar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#DC143C', // Crimson Red (Nepal Flag)
-            secondary: '#003893', // Flag Blue
-            white: '#ffffff',
-          }
-        }
-      }
-    }
-  </script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mr. Shasank Lamsal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-sans scroll-smooth transition-colors duration-300">
-
-  <!-- Light/Dark Toggle Switch -->
-  <div class="fixed bottom-4 left-4 z-50 flex items-center gap-2">
-    <span class="text-sm text-gray-700 dark:text-gray-300">Theme</span>
-    <label class="relative inline-flex items-center cursor-pointer">
-      <input type="checkbox" id="theme-toggle" class="sr-only peer">
-      <div class="w-11 h-6 bg-gray-300 rounded-full peer dark:bg-gray-600 peer-checked:bg-primary transition-all duration-300"></div>
-      <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
-    </label>
-  </div>
-
-  <!-- Header -->
-  <header class="sticky top-0 bg-white dark:bg-gray-800 shadow z-40 transition">
-    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-primary">Mr. Shasank Lamsal</h1>
-      <ul class="flex gap-6 text-lg">
-        <li><a href="#about" class="hover:text-primary">About</a></li>
-        <li><a href="#projects" class="hover:text-primary">Projects</a></li>
-        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
-    <img src="https://i.postimg.cc/qBsY34BZ/image-2025-05-30-211814483.png" alt="Shasank Lamsal" class="w-40 h-40 object-cover rounded-full shadow-lg mb-6" />
-    <h2 class="text-4xl md:text-6xl font-extrabold mb-2">Hi, I'm Shasank</h2>
-    <p class="text-xl md:text-2xl mb-4 text-secondary">Student | Web Designer | Co-Founder of <strong class="text-primary">WebGhar</strong></p>
-    <a href="#projects" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full transition">Explore My Work</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 px-6 transition">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">About Me</h3>
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-        Hello, I'm <strong>Mr. Shasank Lamsal</strong> — a passionate <strong>Web Designer</strong>, <strong>Programmer</strong>, and <strong>Student</strong> from Nepal.
-        I’m the co-founder of <strong class="text-primary">WebGhar</strong>, a growing web development service aimed at helping local businesses and personal brands build their online presence.
-        I specialize in clean, responsive design using modern front-end technologies. Whether you need a portfolio, blog, or small business website — I’m here to help bring it to life.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-20 px-6 bg-white dark:bg-gray-900 transition">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold text-center mb-10">Projects</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-          <h4 class="text-xl font-semibold mb-2">Responsive Portfolio</h4>
-          <p class="text-gray-600 dark:text-gray-300">A personal website showcasing skills, contact info, and responsive design.</p>
+<body class="light">
+    <section class="project-hero">
+        <div class="container">
+            <h1>Project Title</h1>
+            <p class="project-subtitle">Brief description of the project.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
         </div>
-        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-          <h4 class="text-xl font-semibold mb-2">JavaScript Mini Games</h4>
-          <p class="text-gray-600 dark:text-gray-300">Fun browser games built with HTML, CSS, and JavaScript to enhance logic skills.</p>
+    </section>
+    <section class="project-details">
+        <div class="container project-info-grid">
+            <div class="project-image">
+                <img src="project-image.png" alt="Project Image">
+            </div>
+            <div class="project-overview">
+                <h2>Overview</h2>
+                <p>This project showcases a dynamic frontend layout with animation and code syntax styling.</p>
+                <div class="project-meta">
+                    <div class="meta-item"><i class="fas fa-code"></i> Frontend</div>
+                    <div class="meta-item"><i class="fas fa-calendar"></i> 2025</div>
+                </div>
+            </div>
         </div>
-        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-          <h4 class="text-xl font-semibold mb-2">CSS Components Library</h4>
-          <p class="text-gray-600 dark:text-gray-300">Reusable UI components made with Tailwind CSS for fast and efficient prototyping.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800 px-6 transition">
-    <div class="max-w-xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">Let's work together! Reach out via email or connect on social platforms.</p>
-      <a href="mailto:lamsalshashank2@gmail.com" class="text-primary text-xl underline block mb-2">lamsalshashank2@gmail.com</a>
-      <a href="https://instagram.com/shasank.lamsal" target="_blank" class="text-primary text-xl underline block">Instagram</a>
-      <a href="https://www.linkedin.com/in/shashank-lamsal-665b54284" target="_blank" class="text-primary text-xl underline block">LinkedIn Profile</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 transition">
-    &copy; 2025 Mr. Shasank Lamsal | Built with ❤️ in Nepal | WebGhar
-  </footer>
-
-  <!-- Animations -->
-  <script>
-    ScrollReveal().reveal('section h3, section p, section a, section div', {
-      delay: 100,
-      interval: 100,
-      distance: '20px',
-      origin: 'bottom',
-      duration: 600
-    });
-
-    const toggleInput = document.getElementById('theme-toggle');
-    toggleInput.addEventListener('change', () => {
-      document.documentElement.classList.toggle('dark');
-      document.documentElement.classList.toggle('light');
-    });
-  </script>
+    </section>
 </body>
 </html>

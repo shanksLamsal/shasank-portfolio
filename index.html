@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Mr. Shasank Lamsal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shasank Lamsal | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
-<body class="light">
-    <section class="project-hero">
-        <div class="container">
-            <h1>Project Title</h1>
-            <p class="project-subtitle">Brief description of the project.</p>
-            <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-            </div>
-        </div>
+<body>
+  <header>
+    <h1>Shasank Lamsal</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a Web Designer, Programmer, and Student. Passionate about clean design and efficient code.</p>
     </section>
-    <section class="project-details">
-        <div class="container project-info-grid">
-            <div class="project-image">
-                <img src="project-image.png" alt="Project Image">
-            </div>
-            <div class="project-overview">
-                <h2>Overview</h2>
-                <p>This project showcases a dynamic frontend layout with animation and code syntax styling.</p>
-                <div class="project-meta">
-                    <div class="meta-item"><i class="fas fa-code"></i> Frontend</div>
-                    <div class="meta-item"><i class="fas fa-calendar"></i> 2025</div>
-                </div>
-            </div>
-        </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project Title</h3>
+        <p>Brief description of the project.</p>
+        <span class="tags">HTML</span>
+        <span class="tags">CSS</span>
+        <span class="tags">JavaScript</span>
+        <div class="preview"></div>
+      </div>
     </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lamsalshashank2@gmail.com">lamsalshashank2@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/shasank.lamsal" target="_blank">@shasank.lamsal</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Shasank Lamsal</p>
+  </footer>
 </body>
 </html>
